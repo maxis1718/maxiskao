@@ -25,6 +25,7 @@ def current(target):
 
 @app.route('/')
 @app.route('/<section>')
+@app.route('/<section>/')
 def show(section='profile'):
 	selected, triangle = current(section)
 
@@ -36,7 +37,7 @@ def show(section='profile'):
 		return redirect(url_for('show'))
 
 	else: 
-		return render_template(section+'.html', selected=selected, triangle=triangle)
+		return render_template(section+'.html', meta=meta, selected=selected, triangle=triangle)
 		
 
 if __name__ == "__main__":
