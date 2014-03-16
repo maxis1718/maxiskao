@@ -1,10 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projects>
+
+	<project>
+		<name>Glance</name>
+		<link>http://glance-it.herokuapp.com/</link>
+		<logo>img/glance-logo.png</logo>
+		<time>(2014 - present)</time>
+		<detail>
+			<p>
+				<text>A brand new way to look up a tedious dictionary</text>
+				<text>Just glance at it!</text>
+			</p>
+		</detail>
+		<team>
+			<member nick="neo"></member>
+			<member nick="mavis"></member>
+			<member nick="joe"></member>
+			<member nick="gina"></member>
+		</team>
+	</project>
+
 	<project>
 		<name>Linggle 10^12</name>
 		<link>http://linggle.com</link>
 		<logo>img/linggle-logo.png</logo>
-		<time>(2012 - present)</time>
+		<time>(2012 - 2013)</time>
 		<detail>
 			<p>
 				<text>We introduce a Web-scale linguistics search engine, Linggle, that retrieves lexical bundles in response to a given query. The query might contain keywords, wildcard, wild part of speech (PoS), synonymous words, and additional regular expression (RE) operators.
