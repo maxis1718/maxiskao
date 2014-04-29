@@ -8,14 +8,18 @@
 		<time>(2014 - present)</time>
 		<detail>
 			<p>
-				<text>A brand new way to look up a tedious dictionary</text>
-				<text>Just glance at it!</text>
+				<text>GLANCE is a text visualization tool to present a large amount of lexical phenomena using charts and graphs.</text>
+				<text>We designed interfaces to allow comparison between text and graphics presentation.</text>
+				
+			</p>
+			<p>
+				<text>This project aimed at helping language learners understand a word quickly and intuitively. Just glance at it!</text>
 			</p>
 		</detail>
 		<team>
 			<member nick="neo"></member>
-			<member nick="mavis"></member>
 			<member nick="joe"></member>
+			<member nick="mavis"></member>
 			<member nick="gina"></member>
 		</team>
 	</project>
