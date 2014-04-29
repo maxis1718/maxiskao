@@ -1,4 +1,5 @@
 from xml.etree import ElementTree
+import urllib2
 
 def build_people(people_xml='people.xml'):
 	root = ElementTree.parse(people_xml).getroot()
@@ -22,7 +23,6 @@ def build_projects(projects_xml='projects.xml', people_xml='people.xml'):
 
 		P = {}
 		P['name'] = '' if project.find('name') is None else project.find('name').text
-		
 		P['link'] = '' if project.find('link') is None else project.find('link').text
 		P['logo'] = '' if project.find('logo') is None else project.find('logo').text
 		P['time'] = '' if project.find('time') is None else project.find('time').text
