@@ -40,23 +40,23 @@
 			<div id="logo">Maxis Kao</div>
 			<div id="menu">
 				<div class="menu-item {{ selected['profile'] }} ">
-					<span><a href="/">Profile</a></span>
+					<span><a href="{{ url_for('show', section="profile") }}">Profile</a></span>
 					<span class="tri {{ triangle['profile'] }}"></span>
 				</div>
 				<div class="menu-item {{ selected['projects'] }}">
-					<span><a href="/projects">Projects</a></span>
+					<span><a href="{{ url_for('show', section="projects") }}">Projects</a></span>
 					<span class="tri {{ triangle['projects'] }}"></span>
 				</div>
 				<div class="menu-item {{ selected['publications'] }}">
-					<span><a href="/publications">Publications</a></span>
+					<span><a href="{{ url_for('show', section="publications") }}">Publications</a></span>
 					<span class="tri {{ triangle['publications'] }}"></span>
 				</div>
 				<div class="menu-item {{ selected['cv'] }}">
-					<span><a href="/static/files/Maxis-CV-with-pubs.pdf" target="_blank">CV</a></span>
+					<span><a href="{{ url_for('static', filename="files/Maxis-CV-with-pubs.pdf") }} " target="_blank">CV</a></span>
 					<span class="tri {{ triangle['cv'] }}"></span>
 				</div>
 				<div class="menu-item {{ selected['about'] }}">
-					<span><a href="/about">Traveling</a></span>
+					<span><a href="{{ url_for('show', section="about") }}">Traveling</a></span>
 					<span class="tri {{ triangle['about'] }}"></span>
 				</div>
 			</div>

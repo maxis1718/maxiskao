@@ -1,7 +1,14 @@
 from xml.etree import ElementTree
+import os
+
+file_path = os.path.dirname(__file__)
+abs_file_path = os.path.abspath(file_path)
 
 def build_people(people_xml='people.xml'):
-	root = ElementTree.parse(people_xml).getroot()
+	try:
+		root = ElementTree.parse(people_xml).getroot()
+	except Exception,e: print str(e)
+
 	PEOPLE = {}
 	for people in root:
 		name = people.find('name').text
@@ -11,6 +18,9 @@ def build_people(people_xml='people.xml'):
 	return PEOPLE
 
 def build_projects(projects_xml='projects.xml', people_xml='people.xml'):
+
+	people_xml = os.path.join(file_path, people_xml)
+	projects_xml = os.path.join(file_path, projects_xml)
 
 	PEOPLE = build_people(people_xml)
 

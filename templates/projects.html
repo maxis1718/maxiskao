@@ -8,7 +8,8 @@
 			<td class="left">
 				<div class="project-logo">
 					<a href="{{ project['link'] }}" target="_blank">
-					<img class="img-logo" src= "{{  '/static/' + project['logo'] }}" />
+					<img class="img-logo" src= "{{ url_for('static', filename=project['logo']) }}" />
+					<!-- <img class="img-logo" src= "{{  '/static/' + project['logo'] }}" /> !-->
 				</a>
 				</div>
 			</td>
