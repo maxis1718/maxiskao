@@ -3,7 +3,7 @@
 
 	<project>
 		<name>Glance</name>
-		<link>http://glance-it.herokuapp.com/?query=however%26query=but</link>
+		<link>http%3A%2F%2Fglance-it.herokuapp.com%2F%3Fquery%3Dhowever%26query%3Dbut</link>
 		<logo>img/glance-logo.png</logo>
 		<time>(2014 - present)</time>
 		<detail>
