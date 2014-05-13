@@ -2,10 +2,26 @@
 <projects>
 
 	<project>
+		<name>Feelit</name>
+		<link>http://academiasinicanlplab.github.io/feelit/</link>
+		<logo>img/feelit-content.png</logo>
+		<time>(ongoing)</time>
+		<detail>
+			<p>
+				<text>A key focus of this work was to recognize implicit emotions in blog posts.</text>
+				<text>Different from past approaches using surface features, we utilize syntax and semantic knowledges and learn meaningful patterns to detect a user's intended emotion.</text>
+			</p>
+		</detail>
+		<team>
+			<member nick="cherry"></member>
+		</team>
+	</project>
+
+	<project>
 		<name>Glance</name>
 		<link>http://glance-it.herokuapp.com/?query=however&amp;query=but</link>
 		<logo>img/glance-logo.png</logo>
-		<time>(2014 - present)</time>
+		<time>(2014)</time>
 		<detail>
 			<p>
 				<text>GLANCE is a text visualization tool to present a large amount of lexical phenomena using charts and graphs.</text>
