@@ -4,7 +4,7 @@ a {color: inherit; text-decoration: none}
 /*position: relative;  top: 24px; border: 1px solid #CCC; */
 #container {clear: both; width: 960px; min-height: 512px; background: none; margin: 0 auto; padding: 0; position: relative; top: 72px;}
 #header { width: 100%; height: 48px; background: none; border-bottom: 1px solid #9c0000;;}
-	#logo {width: 320px; float: left; height: 48px; line-height: 48px; font-size: 24px; font-family: Segoe UI light; letter-spacing: 4px; word-spacing: 3px; background: #9c0000; color: white; text-align: center}
+	#logo {width: 320px; float: left; height: 48px; line-height: 48px; font-size: 24px; font-family: "Segoe UI light"; letter-spacing: 4px; word-spacing: 3px; background: #9c0000; color: white; text-align: center}
 	#menu {width: 640px; height: 48px; background: none; margin: 0 0 0 auto; position: relative; float: left;}
 	.menu-item {max-width: 160px; height: 48px; background: none; float: left; line-height: 48px; text-align: center; /*border-right: 1px solid black;*/ position: relative; color: #666; padding-left: 32px; padding-right: 24px}
 	.menu-item span:hover, .selected { border-bottom: 1px dashed gray; cursor: pointer; color: #8c0000;}
@@ -20,17 +20,34 @@ a {color: inherit; text-decoration: none}
 }
 #content { width: 100%; min-height: 0px; padding-bottom: 24px;}
 
-#profile-left, #profile-right { }
+#profile-left, #profile-right 
+{
+	font-family: "Museo light";
+	/*font-family: "Segoe UI light";*/
+	letter-spacing: 1px;
+	color: #555;
+	
+}
+	#profile-right a
+	{
+		/*color: #9c0000;*/
+		color: #3265cc;
+		border-bottom: 0!important;
+		/*letter-spacing: 0px;*/
+		/*font-family: "Museo Light";*/
+	}
+	#profile-right a:hover
+	{
+		color: #dc3910;
+		border-bottom: 1px dashed #ff9800!important;
+	}
+
 #profile-left 	{ width: 360px; height: 450px; /*background: red;*/}
 #profile-right 	{ width: 600px; height: 450px; /*background: yellow;*/}
 #profile-right ul li {line-height: 36px;}
 #profile-right ul li a {border-bottom: 1px dashed orange;}
 #profile-right ul li a:hover {border-bottom: 1px dashed #9c0000; color: #9c0000;}
 #profile-img {padding: 8px; background: white; border: 1px solid #bbb; box-shadow: 1px 1px 5px #bbb;}
-
-#socialnetwork {width: 240px; height: 64px; margin-left: 36px;}
-.socialnetwork-block {float: left;}
-.socialnetwork-block img {width: 40px; margin-left: 6px;}
 
 
 .project-block {width: 100%; min-height: 240px; background: white; box-shadow: 3px 3px 5px #bbb; border-bottom: 1px solid #aaa; border-top: 1px solid #ddd; border-left: 1px solid #ddd; margin-top: 48px; /*border: 1px solid black;*/ color: #555; line-height: 24px; padding-bottom: 20px; padding-top: 12px;}
@@ -83,7 +100,53 @@ table .right p a:hover{text-decoration: underline;}
 /*.interest-block .hi { width: 720px;}*/
 /*.interest-block .vi { height: 480px;}*/
 
-#footer { width: 100%; height: 32px; background: none; border-top: 1px solid #bbb; margin-top: 24px;}
-#copyright {font-size: 12px; color: #888;}
+#footer 
+{ 
+	width: 100%; height: 32px; background: none; border-top: 1px solid #bbb; margin-top: 24px;
+}
+	#footer .footer-wrap
+	{
+		/*display: inline-block;*/
+		height: 32px;
+		/*background: red;*/
+	}
+	#copyright-wrap
+	{
+		float: right;
+
+	}
+		#copyright 
+		{
+			font-size: 12px; 
+			color: #888;
+		}
+
+	#socialnetwork 
+	{
+		width: 240px; 
+		text-align: left;
+		/*float: left;*/
+		/*display: inline-block;*/
+		/*margin-left: 36px;*/
+	}
+		.socialnetwork-block 
+		{
+			/*float: left;*/
+			display: inline-block;
+			line-height: 32px;
+			/*text-align: center;*/
+		}
+			.socialnetwork-block img 
+			{
+				width: 24px;
+				margin-left: 0px;
+				margin-top: 2px;
+			}
+			.socialnetwork-block img[alt=github]
+			{
+				width: 22px;
+			}
+
+
 /*#footer hr {display: block; height: 1px; border: 0; border-top: 1px solid #bbb; margin: 1em 0; padding: 0;}*/
 .hide {display: none}
