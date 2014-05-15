@@ -30,11 +30,11 @@ def show(section='profile'):
 	selected, triangle = current(section)
 	if section == 'projects':
 		projects = util.build_projects(projects_xml='static/projects.xml', people_xml='static/people.xml')
-		return render_template(section+'.html', meta=meta, selected=selected, triangle=triangle, projects=projects)
+		return render_template(section+'.tpl', meta=meta, selected=selected, triangle=triangle, projects=projects)
 	if section not in pages: 
 		return redirect(url_for('show'))
 	else:
-		return render_template(section+'.html', meta=meta, selected=selected, triangle=triangle)
+		return render_template(section+'.tpl', meta=meta, selected=selected, triangle=triangle)
 
 if __name__ == "__main__":
 	app.debug = True
