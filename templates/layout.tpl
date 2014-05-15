@@ -40,21 +40,21 @@
 			<div id="logo">Maxis Kao</div>
 			<div id="menu">
 				<div class="menu-item {{ selected['profile'] }} ">
-					<span><a href="{{ url_for('show', section="profile") }}">About me</a></span>
+					<span><a href="{{ url_for('show', section="profile") }}">About</a></span>
 					<span class="tri {{ triangle['profile'] }}"></span>
 				</div>
 				<div class="menu-item {{ selected['projects'] }}">
-					<span><a href="{{ url_for('show', section="projects") }}">Portfolio</a></span>
+					<span><a href="{{ url_for('show', section="projects") }}">Works</a></span>
 					<span class="tri {{ triangle['projects'] }}"></span>
 				</div>
 				<div class="menu-item {{ selected['publications'] }}">
 					<span><a href="{{ url_for('show', section="publications") }}">Publications</a></span>
 					<span class="tri {{ triangle['publications'] }}"></span>
 				</div>
-				<div class="menu-item {{ selected['cv'] }}">
+<!-- 				<div class="menu-item {{ selected['cv'] }}">
 					<span><a href="{{ url_for('static', filename="files/Maxis-CV-with-pubs.pdf") }} " target="_blank">CV</a></span>
 					<span class="tri {{ triangle['cv'] }}"></span>
-				</div>
+				</div> -->
 				<div class="menu-item {{ selected['about'] }} hide">
 					<span><a href="{{ url_for('show', section="about") }}">Traveling</a></span>
 					<span class="tri {{ triangle['about'] }}"></span>

@@ -1,4 +1,4 @@
-{% extends "layout.html" %}
+{% extends "layout.tpl" %}
 
 {% block content %}
 <table>
@@ -30,7 +30,7 @@
 					and
 					<a href="https://www.itri.org.tw/eng/" target="_blank">ITRI</a>.
 				</li>
-				<li>CV</li>
+				<li>Here's my <a href="{{ url_for('static', filename="files/Maxis-CV-with-pubs.pdf") }}" target="_blank">CV</a></li>
 				<!-- <li>website design, backpacking, painting and workout</li> -->
 			</ul>
 		</td>
