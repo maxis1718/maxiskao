@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <group>
 	<people>
+		<name>Cherry Lee</name>
+		<link>#</link>
+		<nick>cherry</nick>
+	</people>
+	<people>
 		<name>Joanne Boisson</name>
 		<nick>Joanne</nick>
 	</people>
